@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="381dp"
+        android:layout_height="281dp"
+        android:background="#9A1212"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="367dp"
+            android:layout_height="265dp"
+            android:background="@color/design_default_color_secondary_variant"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imgproducto"
+                android:layout_width="136dp"
+                android:layout_height="129dp"
+                android:contentDescription="@string/imgProducto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintHorizontal_bias="0.363"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.419"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="184dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/txtNombre"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtStock"
+                android:layout_width="185dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtStock"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtPrecio"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="@+id/txtPrecio"
+                app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
+
+            <TextView
+                android:id="@+id/txtPrecio"
+                android:layout_width="182dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtPrecio"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+                app:layout_constraintStart_toStartOf="@+id/txtNombre"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+            <Button
+                android:id="@+id/btnVerDetalles"
+                android:layout_width="158dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/car_ui_color_accent"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/btnVerDetalles"
+                app:layout_constraintEnd_toEndOf="@+id/txtStock"
+                app:layout_constraintStart_toStartOf="@+id/txtStock"
+                app:layout_constraintTop_toBottomOf="@+id/txtStock" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="148dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
