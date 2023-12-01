@@ -1,0 +1,8 @@
+usuarios
+Brandon 
+Contraseña: Loco
+Palabra secreta: futbol
+
+Jose 
+Contraseña: java
+Palabra secreta: java
